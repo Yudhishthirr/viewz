@@ -19,3 +19,28 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+
+src/app/(tabs)
+src/app/pose
+src/app/
+src/app/
+src/app/
+src/components/ui
+src/components/
+src/components/navigation
+src/features/home
+src/features/poses
+src/features/camera
+src/features/pose-detection
+src/features/gallery
+src/features/editor
+src/features/profile
+src/services/storage
+src/services/permissions
+src/store
+src/types
+src/utils
+assets/fonts
+assets/poses
