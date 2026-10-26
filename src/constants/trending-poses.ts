@@ -28,5 +28,6 @@ export const TRENDING_POSES = [
     image:
       "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=600",
   },
+  
 ];
 // https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1000

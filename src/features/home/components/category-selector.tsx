@@ -1,13 +1,17 @@
-
-import { useState } from "react";
 import { Pressable, ScrollView, Text, View } from "react-native";
 
 import { CATEGORIES, type CategoryId } from "@/constants/categories";
 import { COLORS } from "@/constants/theme";
 
-export function CategorySelector() {
-  const [activeCategory, setActiveCategory] = useState<CategoryId>("all");
+type CategorySelectorProps = {
+  activeCategory: CategoryId;
+  onCategoryChange: (category: CategoryId) => void;
+};
 
+export function CategorySelector({
+  activeCategory,
+  onCategoryChange,
+}: CategorySelectorProps) {
   return (
     <View className="mb-6">
       <ScrollView
@@ -21,7 +25,7 @@ export function CategorySelector() {
           return (
             <Pressable
               key={category.id}
-              onPress={() => setActiveCategory(category.id)}
+              onPress={() => onCategoryChange(category.id)}
               className="px-5 py-2.5 rounded-full"
               style={{
                 backgroundColor: isActive
