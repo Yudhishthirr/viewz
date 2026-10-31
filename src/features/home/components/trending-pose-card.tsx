@@ -43,7 +43,8 @@ export function TrendingPoseCard({
         style={{ backgroundColor: COLORS.surface }}
       >
         <Image
-          source={{ uri: image }}
+          // source={{ uri: image }}
+          source={typeof image === "string" ? { uri: image } : image}
           className="w-full h-full"
           resizeMode="cover"
         />

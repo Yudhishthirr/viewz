@@ -1,5 +1,5 @@
 
-import { Stack, useLocalSearchParams } from "expo-router";
+import { router, Stack, useLocalSearchParams } from "expo-router";
 import { Text, View } from "react-native";
 
 import { TRENDING_POSES } from "@/constants/trending-poses";
@@ -52,9 +52,18 @@ export default function PoseDetailsScreen() {
 
                     <View className="mt-5">
                         <StartPoseButton
-                            onPress={() => {
-                                console.log("Starting pose", pose.id);
-                            }}
+                        onPress={() => {
+    router.push({
+        pathname: "/camera",
+        params: { id: pose.id },
+    });
+}}
+                            // onPress={() => {
+                            //     router.push({
+                            //         pathname: "/camera",
+                            //         params: { id: pose.id },
+                            //     });
+                            // }}
                         />
                     </View>
                 </View>

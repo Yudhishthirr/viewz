@@ -13,7 +13,8 @@ export function PoseHero({ title, image }: PoseHeroProps) {
     <View className="flex-1">
       {/* Hero Image */}
       <Image
-        source={{ uri: image }}
+        // source={{ uri: image }}
+        source={typeof image === "string" ? { uri: image } : image}
         className="w-full h-full absolute"
         resizeMode="cover"
       />
